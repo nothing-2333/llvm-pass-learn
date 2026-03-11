@@ -1,3 +1,10 @@
+一些相关路径:
+- llvm/include/llvm/Transforms
+- llvm/lib/Transforms
+
+
+
+## 豆包
 | 学习阶段 | 所属目录 | 文件名 | Pass名称 | 难度 | 核心学习点 | 适用场景/补充说明 |
 |----------|----------|--------|----------|------|------------|------------------|
 | **入门级（必学）** | Utils | HelloWorld.cpp | HelloWorld | ★☆☆ | Pass基本框架、IR遍历、注册机制 | LLVM官方入门示例，先跑通这个再学其他 |
@@ -23,3 +30,9 @@
 | | Scalar | SROA.cpp | Scalar Replacement of Aggregates | ★★★☆ | 聚合类型拆分、内存优化 | 深入理解标量化优化 |
 | | Utils | PromoteMemoryToRegister.cpp | Promote Memory to Register | ★★★☆ | 手动实现Mem2Reg的核心逻辑 | 辅助理解Mem2Reg的底层原理 |
 | | Instrumentation | GCOVProfiling.cpp | GCOV Profiling | ★★★★ | 插桩、覆盖率分析、数据收集 | 学习"分析类Pass"的编写思路 |
+
+
+## 我
+| 学习顺序 | 路径 |
+| 1 | llvm/include/llvm/Transforms/Utils/HelloWorld.h |
+| 2 | llvm/include/llvm/Transforms/Scalar/DCE.h |
