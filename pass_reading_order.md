@@ -4,8 +4,6 @@
 
 
 ## 豆包
-| | Scalar | InstSimplifyPass.cpp | Instruction Simplify | ★★☆ | 指令模式匹配、常量折叠（如1+0→1） | 理解"指令替换"的核心思路 |
-| | Scalar | Sink.cpp | Code Sinking | ★★☆ | 指令使用位置分析、代码移动 | 学习如何安全调整指令位置 |
 | **进阶级（核心优化）** | Scalar | DeadStoreElimination.cpp | Dead Store Elimination | ★★★ | Load/Store分析、内存操作优化 | 理解内存相关IR的处理逻辑 |
 | | Scalar | LICM.cpp | Loop Invariant Code Motion | ★★★ | 循环分析、LoopPass使用、循环不变量外提 | 入门循环优化的核心Pass |
 | | Scalar | SimplifyCFGPass.cpp | Simplify CFG | ★★★ | 基本块合并、分支简化、控制流优化 | 理解CFG（控制流图）的修改 |
@@ -32,3 +30,4 @@
 | 2 | llvm/include/llvm/Transforms/Scalar/DCE.h |
 | 3 | llvm/lib/Transforms/Scalar/ADCE.cpp |
 | 4 | llvm/lib/Transforms/Scalar/InstSimplifyPass.cpp |
+| 5 | llvm/lib/Transforms/Scalar/Sink.cpp |
