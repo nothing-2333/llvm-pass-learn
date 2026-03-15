@@ -1,15 +1,9 @@
 一些相关路径:
-- llvm/include/llvm/Transforms
 - llvm/lib/Transforms
-
+- llvm/lib/Analysis
 
 
 ## 豆包
-| 学习阶段 | 所属目录 | 文件名 | Pass名称 | 难度 | 核心学习点 | 适用场景/补充说明 |
-|----------|----------|--------|----------|------|------------|------------------|
-| **入门级（必学）** | Utils | HelloWorld.cpp | HelloWorld | ★☆☆ | Pass基本框架、IR遍历、注册机制 | LLVM官方入门示例，先跑通这个再学其他 |
-| | Scalar | DCE.cpp | Dead Code Elimination | ★☆☆ | 死指令判定（use_empty()）、指令删除 | 最简单的优化Pass，理解"修改IR"的基本逻辑 |
-| | Scalar | ADCE.cpp | Aggressive DCE | ★★☆ | 控制流分析、不可达代码删除 | DCE的增强版，入门控制流分析 |
 | | Scalar | InstSimplifyPass.cpp | Instruction Simplify | ★★☆ | 指令模式匹配、常量折叠（如1+0→1） | 理解"指令替换"的核心思路 |
 | | Scalar | Sink.cpp | Code Sinking | ★★☆ | 指令使用位置分析、代码移动 | 学习如何安全调整指令位置 |
 | **进阶级（核心优化）** | Scalar | DeadStoreElimination.cpp | Dead Store Elimination | ★★★ | Load/Store分析、内存操作优化 | 理解内存相关IR的处理逻辑 |
@@ -37,3 +31,4 @@
 | 1 | llvm/include/llvm/Transforms/Utils/HelloWorld.h |
 | 2 | llvm/include/llvm/Transforms/Scalar/DCE.h |
 | 3 | llvm/lib/Transforms/Scalar/ADCE.cpp |
+| 4 | llvm/lib/Transforms/Scalar/InstSimplifyPass.cpp |
